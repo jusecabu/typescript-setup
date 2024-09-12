@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "target": "ESNext",
+        "lib": ["ESNext"],
+        "noEmit": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@src/*": ["/*"]
+        }
+    },
+    "exclude": ["node_modules", "**/node_modules/*"]
+}
