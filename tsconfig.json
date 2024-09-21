@@ -1,13 +1,29 @@
 {
     "compilerOptions": {
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
+        /* Base options */
+        "esModuleInterop": true,
+        "skipLibCheck": true,
         "target": "ESNext",
+        "verbatimModuleSyntax": true,
+        // "allowJs": true,
+        // "resolveJsonModule": true,
+        "moduleDetection": "force",
         "lib": ["ESNext"],
+
+        /* Strictness */
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+
+        /* Bundler mode */
+        "allowImportingTsExtensions": true,
+        "moduleResolution": "NodeNext",
+        "module": "NodeNext",
         "noEmit": true,
-        "baseUrl": "./src",
+
+        /* Paths */
+        "baseUrl": "./",
         "paths": {
-            "@src/*": ["/*"]
+            "@src/*": ["./src/*"]
         }
     },
     "exclude": ["node_modules", "**/node_modules/*"]
